@@ -134,28 +134,31 @@
 			<div class="col-md-12 column">
 
 				<div ex:role="viewPanel" style="padding: 0in;">
+					
 
 
 					<div ex:role="exhibit-view" 
 					ex:viewClass="Exhibit.TabularView"  
 					ex:label="Table"  
-					ex:columns=".label,.Ingredienti,.Tempo_stimato"  
-					ex:columnLabels="Titolo,Ingredienti,Tempo stimato" 
-					ex:columnFormats="list,list,list"
+					ex:columns=".label,.Ingredienti,.Preparazione,.Tempo_stimato"  
+					ex:columnLabels="Titolo,Ingredienti,Preparazione,Tempo stimato" 
+					ex:columnFormats="list,list,list,list"
 					ex:sortAscending="true"
 					ex:tableStyler="tableStyler"> 
 					<div ex:role="exhibit-lens">
 						<div class="table-responsive">
 							<table class="table" ex:class-content=".Regione">
 								<tr>
-									<td><strong><span ex:content=".label"></strong></td>
-									<td><span ex:content=".Ingredienti"></td>
+									<td><strong><span ex:content=".label"></span></strong></td>
+									<td><span ex:content=".Ingredienti"></span></td>
+									<td><span ex:content=".Preparazione"></span></td>
 									<td><span ex:content=".Tempo_stimato"></span></td>
 								</tr>
 							</table>
 						</div>
 
 					</div>
+					<div ex:role="exhibit-lens"> <span ex:content=".label"></div>
 				</div> 
 
 
