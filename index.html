@@ -37,7 +37,8 @@
 
     <link rel="exhibit/data" 
     type="application/jsonp"
-    href="https://spreadsheets.google.com/feeds/list/12GM8eeYjnjSnGPdWySMpNkKsxeaGTx_ZnNcw9tGaxto/od6/public/basic?hl=en_US&alt=json-in-script"
+    href="https://spreadsheets.google.com/feeds/list/12GM8eeYjnjSnGPdWySMpNkKsxeaGTx_ZnNcw9tGaxto/o3zrxpv/public/basic?hl=en_US&alt=json-in-script"
+
     ex:converter="googleSpreadsheets" />
 
 
@@ -138,17 +139,16 @@
 					<div ex:role="exhibit-view" 
 					ex:viewClass="Exhibit.TabularView"  
 					ex:label="Table"  
-					ex:columns=".ID,.Titolo,.Ingredienti,.Tempo_stimato"  
-					ex:columnLabels="ID,Titolo,Ingredienti,Tempo stimato" 
-					ex:columnFormats="list,list,list,list"
-					ex:sortAscending="false"
+					ex:columns=".label,.Ingredienti,.Tempo_stimato"  
+					ex:columnLabels="Titolo,Ingredienti,Tempo stimato" 
+					ex:columnFormats="list,list,list"
+					ex:sortAscending="true"
 					ex:tableStyler="tableStyler"> 
 					<div ex:role="exhibit-lens">
 						<div class="table-responsive">
-							<table class="table" ex:class-content=".territorio">
+							<table class="table" ex:class-content=".Regione">
 								<tr>
-									<td><span ex:content=".ID" ></span></td>
-									<td><span ex:content=".Titolo"></td>
+									<td><strong><span ex:content=".label"></strong></td>
 									<td><span ex:content=".Ingredienti"></td>
 									<td><span ex:content=".Tempo_stimato"></span></td>
 								</tr>
