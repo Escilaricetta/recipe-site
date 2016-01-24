@@ -65,3 +65,10 @@ a {
     visibility: hidden !important;
 }
 /* rimosso momentaneamente export tool */
+
+.thumbnail {
+  text-align: center !important;
+}
+.thumbnail .img-responsive {
+display: inline-block !important;
+}
