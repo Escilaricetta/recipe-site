@@ -2,24 +2,24 @@
 <html lang="it">
 <head>
 	<meta charset="utf-8">
-	<title>EsciLaRicetta</title>
+	<title>EsciLaRicetta | Cosa è </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="EsciLaRicetta">
-	<meta name="author" content="OpenDataSicilia">
+  <meta name="description" content="EsciLaRicetta e' un catalogo di ricette fatto dalle persone.">
+  <meta name="author" content="OpenDataSicilia">
 
-	<meta property="og:image" content="http://www.inserire.it/share.jpg" />
-	<meta property="og:title" content="EsciLaRicetta, il segreto del cibo italiano sono gli opendata del cibo italiano" />
-	<meta property="og:url" content="http://www.inserire.it" />
+  <meta property="og:image" content="http://petrusino.opendatasicilia.it/img/share.jpg" />
+  <meta property="og:title" content="EsciLaRicetta, ... Il segreto della cucina italiana sono gli opendata della cucina italiana ..." />
 
-	<!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
-	<!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
-	<!--script src="js/less-1.3.3.min.js"></script-->
-	<!--append ‘#!watch’ to the browser URL, then refresh the page. -->
-	
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
 
-	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
+  <!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
+  <!--script src="js/less-1.3.3.min.js"></script-->
+  <!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
   	<!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <![endif]-->
@@ -35,145 +35,113 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
 
-    <link rel="exhibit/data" 
-    type="application/jsonp"
-    href="https://spreadsheets.google.com/feeds/list/12GM8eeYjnjSnGPdWySMpNkKsxeaGTx_ZnNcw9tGaxto/o3zrxpv/public/basic?hl=en_US&alt=json-in-script"
 
-    ex:converter="googleSpreadsheets" />
-
-
-    <script src="./js/dist/exhibit-api.js?locale=it"></script>
-
+    <script type="text/javascript" src="./js/ga.js"></script>
     
+    <link href="https://zapier.com/engine/rss/43663/p2" rel="alternate" type="application/rss+xml" title="PETRUSINO: il feed per rimanere aggiornati sulle nuove risorese inserite" />
 
-    
+  </head>
 
-    <script type="text/javascript">
-    var tableStyler = function(table, database) {
-    	$(table).addClass("table table-condensed table-striped");
-    };
-    </script>
+  <body>
+   <div class="container">
+    <div class="row clearfix">
+     <div class="col-md-12 column">
+      <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> 
+          <a class="navbar-brand logo" href="./index.html">
+            <img style="max-width:100px; margin-top: 7px;"  src="./img/pitrusino.png">
+          </a>
+        </div>
 
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+           <li class="active">
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./cosa.html">Cosa &egrave;</a>
+          </li>							
+          <li>
+            <a href="https://docs.google.com/forms/d/1YlCInvvavMrxSMrOe0A-pdXbiWs-nWHdc27lo4ixexY/viewform">Inserisci la tua ricetta</a>
+          </li>
+          <li>
+            <a href="#">Open</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+         <li>
+          <!--<a href="#">segnaposto</a>-->
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+       <li>
+        <!--<a href="http://opendatasicilia.it/" target="_blank">OpenDataSicilia</a>-->
+      </li>
+    </ul>
+  </div>
 
+</nav>
+</div>
+</div>
 
-</head>
+<div class="row clearfix">
+ <div class="col-md-2 column">
 
-<body>
-	<div class="container">
-		<div class="row clearfix">
-			<div class="col-md-12 column">
-				<nav class="navbar navbar-default" role="navigation">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> 
-						<a class="navbar-brand logo" href="./index.html">
-							<img style="max-width:100px; margin-top: 7px;"	src="./img/pitrusino.png">
-						</a>
-					</div>
+ </div>
 
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav">
-							<li class="active">
-								<a href="./index.html">Home</a>
-							</li>
-							<li>
-								<a href="./cosa.html">Cosa &egrave;</a>
-							</li>							
-							<li>
-								<a href="https://docs.google.com/forms/d/1YlCInvvavMrxSMrOe0A-pdXbiWs-nWHdc27lo4ixexY/viewform">Inserisci la tua ricetta</a>
-							</li>
-							<li>
-								<a href="#">Open</a>
-							</li>
-						</ul>
-						<ul class="nav navbar-nav navbar-right">
-							<li>
-								<!--<a href="#">segnaposto</a>-->
-							</li>
-						</ul>
-					</div>
+ <div class="col-md-8 column">
+   <blockquote>
+    <p><strong>EsciLaRicetta</strong> &egrave; un progetto partecipato. Il mondo guarda al cibo italiano con un’ammirazione incredibile. Mangiare italiano è considerato ovunque qualcosa di estremamente “figo”. Ma noi abbiamo veramente capito che le ricette italiane sono il segreto della diffusione di una parte della nostra cultura nel mondo?.</p>
+  </blockquote>
 
-				</nav>
-			</div>
-		</div>
+ </div>
+ <div class="col-md-2 column">
 
-		
-		<div class="row clearfix">
-			<div class="col-md-1 column">
+ </div>
 
-			</div>
-			<div class="col-md-10 column">
-				<strong>Cerca</strong><div ex:role="facet" ex:facetClass="TextSearch"></div>
-			</div>
-			<div class="col-md-1 column">
+</div>
 
-			</div>
-		</div>
-		<div class="row clearfix">
-			<div class="col-md-7 column">
-				<div ex:role="facet" 
-				ex:facetClass="Cloud"
-				ex:expression=".Categoria" 
-				ex:facetLabel="Categoria"
-				ex:sortMode="count"></div>
-			</div>
-			<div class="col-md-2 column">
-				<div ex:role="facet" 
-				ex:expression=".Regione" 
-				ex:facetLabel="Regione"
-				ex:sortMode="count"></div>
-			</div>
-			<div class="col-md-3 column">
-				<div ex:role="facet" 
-				ex:expression=".Città" 
-				ex:facetLabel="Città"
-				data-ex-missing-label="Non specificato">
-				</div>
-			</div>
-		</div>
-		<div class="row clearfix">
-			<div class="col-md-12 column">
+<div class="row clearfix">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="./img/telegram_h.png" class="img-responsive" alt="EsciLaRicetta su Telegram">
+      <div class="caption">
+        <h3>Su Telegram</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at sodales enim. Sed tempor tempor scelerisque. In at fermentum ante, et porttitor enim. </p>
+        <p><a href="https://telegram.me/escilaricettaBot" target="_blank" class="btn btn-default" role="button">Vai</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="./img/twitter_h.png" class="img-responsive" alt="EsciLaRicetta su twitter">
+      <div class="caption">
+        <h3>Su Twitter</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at sodales enim. Sed tempor tempor scelerisque. In at fermentum ante, et porttitor enim. </p>
+        <p><a href="https://twitter.com/escilaricetta" target="_blank" class="btn btn-default" role="button">Vai</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="./img/web_h.png" class="img-responsive" alt="EsciLaRicetta sul web">
+      <div class="caption">
+        <h3>Sul web</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at sodales enim. Sed tempor tempor scelerisque. In at fermentum ante, et porttitor enim. </p>
+        <p><a href="./index.html" class="btn btn-default" role="button">Vai</a></p>
+      </div>
+    </div>
+  </div>
+</div>  		
 
-				<div ex:role="viewPanel" style="padding: 0in;">
-					
+<hr>
+<footer>
+ <p class="text-center">
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a> <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">I contenuti di EsciLaRicetta</span> sono distribuiti con Licenza <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale</a>.
+      </p>
+</footer>
 
-
-					<div ex:role="exhibit-view" 
-					ex:viewClass="Exhibit.TabularView"  
-					ex:label="Table"  
-					ex:columns=".label,.Ingredienti,.Preparazione,.Tempo_stimato"  
-					ex:columnLabels="Titolo,Ingredienti,Preparazione,Tempo stimato" 
-					ex:columnFormats="list,list,list,list"
-					ex:sortAscending="true"
-					ex:tableStyler="tableStyler"> 
-					<div ex:role="exhibit-lens">
-						<div class="table-responsive">
-							<table class="table" ex:class-content=".Regione">
-								<tr>
-									<td><strong><span ex:content=".label"></span></strong></td>
-									<td><span ex:content=".Ingredienti"></span></td>
-									<td><span ex:content=".Preparazione"></span></td>
-									<td><span ex:content=".Tempo_stimato"></span></td>
-								</tr>
-							</table>
-						</div>
-
-					</div>
-					<div ex:role="exhibit-lens"> <span ex:content=".label"></div>
-				</div> 
-
-
-
-
-			</div>
-
-		</div>
-		<hr>
-		<footer>
-			<p class="text-center">
-				<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a> <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">I contenuti di EsciLaRicetta</span> sono distribuiti con Licenza <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale</a>.
-			</p>
-		</footer>
-
-	</div>
+</div>
 </body>
 </html>
